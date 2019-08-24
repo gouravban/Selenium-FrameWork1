@@ -61,6 +61,8 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 	}
+	
+	
 
 	@AfterSuite
 	public static void tearDown() {
